@@ -1,0 +1,53 @@
+body, html{
+  overflow: overlay;
+  
+}
+.Homepage_body{
+  background-image: url('img/japan-illustration.webp');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 850px;
+
+}
+
+.nav_bar{
+  justify-content: center;
+  background-color: rgb(121, 171, 214);
+}
+
+
+.nav_list{
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav_item{
+  float: right;
+  justify-content: center;
+  display: block;
+  padding: 20px 30px;
+  margin: 20px 30px;
+  
+ 
+}
+.nav_item:hover{
+  color: #ea2330;
+  background-color: lightgray;
+}
+
+.additional_nav{
+  justify-content: center;
+}
+.additional_nav_list{
+  justify-content: center;
+  list-style: none;
+  display: flex;
+}
+.additional_nav_item{
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
