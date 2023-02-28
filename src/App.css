@@ -1,53 +1,38 @@
-body, html{
-  overflow: overlay;
-  
+.body{
+  background-color: azure;
+  height: 100vh;
 }
-.Homepage_body{
-  background-image: url('img/japan-illustration.webp');
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 850px;
-
-}
-
 .nav_bar{
-  justify-content: center;
-  background-color: rgb(121, 171, 214);
-}
-
-
-.nav_list{
-  list-style-type: none;
-  overflow: hidden;
-  padding: 0px;
   margin: 0px;
-}
-
-.nav_item{
-  float: right;
-  justify-content: center;
-  display: block;
-  padding: 20px 30px;
-  margin: 20px 30px;
-  
- 
-}
-.nav_item:hover{
-  color: #ea2330;
-  background-color: lightgray;
-}
-
-.additional_nav{
-  justify-content: center;
-}
-.additional_nav_list{
-  justify-content: center;
-  list-style: none;
   display: flex;
+  flex-flow: row wrap;
+
+  justify-content: flex-end;
+  background: deepskyblue;
+  border-bottom:2px solid red;
 }
-.additional_nav_item{
-  display: inline-flex;
-  justify-content: center;
-  padding: 10px 10px;
-  margin: 10px 10px;
+.nav_list{
+  display: flex;
+  margin: 0;
+
+
+  padding-right: 100px;
+  width: fit-content;
 }
+.nav_list span{
+  margin: 0px;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+.nav_list span:hover{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  cursor: pointer;
+}
+.nav_link{
+  padding: 10px;
+  font-size: 30px;
+}
+
+

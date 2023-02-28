@@ -1,25 +1,50 @@
 import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+      </Routes>
     </div>
   );
 }
 
-export default App;
+const navStyle = {textDecoration: "none", color: "blue"};
+function Layout(){
+  return(
+    <div className="body">
+      <header>
+      <div className="nav_bar">
+        <nav>
+          {/* Add logo */}
+          <ul className="nav_list">
+            <span>
+            <li className='nav_link'>
+              <Link style={navStyle} to="/">Homepage</Link>
+            </li>
+            </span>
+            <span>
+            <li className='nav_link'>
+              <Link style={navStyle} to="/">Places To Visit</Link>
+            </li>
+            </span>
+            <span>
+            <li className='nav_link'>
+              <Link style={navStyle} to="/">Must Tries</Link>
+            </li>
+            </span>
+            <span>
+            <li className='nav_link'>
+              <Link style={navStyle} to="/">Some Link</Link>
+            </li>
+            </span>
+          </ul>
+        </nav>
+        </div>
+        </header>
+    </div>
+  );
+}
