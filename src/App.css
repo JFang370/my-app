@@ -1,5 +1,7 @@
 .wrapper_navbar{
   position: sticky;
+  margin: 0px ;
+  padding: 0px;
 }
 
 .navbar{
@@ -8,6 +10,7 @@
   flex-flow: row wrap;
   justify-content: flex-end;
   background-color: white;
+  margin-bottom: 10px;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .navbar_list{
@@ -16,64 +19,8 @@
   display: flex;
   width: fit-content;
 }
-.navbar_list span{
-  margin: 0px;
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-}
-.navbar span:hover{
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  cursor: pointer;
-}
 .navbar_item{
+  list-style: none;
   padding: 10px;
   font-size: 30px;
-}
-
-.wrapper_about{
-}
-.section_about{
-}
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-.column-placeholder{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  visibility: visible;
-  background-color: red ;
-}
-.title-column{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2;
-}
-.text-column{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  background-color: aqua;
-  flex: 2;
-}
-.image-column{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  background-color: green;
-  flex: 1;
 }

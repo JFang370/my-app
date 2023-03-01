@@ -1,0 +1,70 @@
+.wrapper{
+
+}
+
+  .section_about{
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  .column-placeholder{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    visibility: visible;
+    background-color: red ;
+  }
+  .row_placeholder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    visibility: visible;  
+  }
+  .title-column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+  }
+  .text-column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: aqua;
+    flex: 2;
+  }
+  .image-column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: green;
+    flex: 1;
+  }
+  
+  .wrapper_main{
+  
+  }
+  
+  #center{
+    
+  }
+  
+  #h{
+    background-image: url('img/japan-illustration.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
