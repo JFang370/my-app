@@ -1,38 +1,79 @@
-.body{
-  background-color: azure;
-  height: 100vh;
+.wrapper_navbar{
+  position: sticky;
 }
-.nav_bar{
+
+.navbar{
   margin: 0px;
   display: flex;
   flex-flow: row wrap;
-
   justify-content: flex-end;
-  background: deepskyblue;
-  border-bottom:2px solid red;
+  background-color: white;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
-.nav_list{
-  display: flex;
-  margin: 0;
-
-
+.navbar_list{
+  margin: 0px;
   padding-right: 100px;
+  display: flex;
   width: fit-content;
 }
-.nav_list span{
+.navbar_list span{
   margin: 0px;
   display: flex;
   list-style: none;
   flex-direction: row;
 }
-.nav_list span:hover{
+.navbar span:hover{
   border-left: 1px solid black;
   border-right: 1px solid black;
   cursor: pointer;
 }
-.nav_link{
+.navbar_item{
   padding: 10px;
   font-size: 30px;
 }
 
+.wrapper_about{
+}
+.section_about{
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.column-placeholder{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  visibility: visible;
+  background-color: red ;
+}
+.title-column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+.text-column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  background-color: aqua;
+  flex: 2;
+}
+.image-column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  background-color: green;
+  flex: 1;
+}
