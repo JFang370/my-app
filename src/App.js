@@ -26,10 +26,15 @@ export default function App() {
 const navStyle = {textDecoration: "none", color: "blue"};
 function Layout() {
   return (
-    <div className='wrapper_navbar'>
+    <div className='container'>
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
       <nav className='navbar'>
+        <li className='navbar_logo'>
+          <Link style={navStyle} to="/">
+            <img src=""></img>
+          </Link>
+        </li>
         <ul className='navbar_list'>
           <li className='navbar_item'>
             <Link style={navStyle} to="/">Home</Link>
@@ -47,6 +52,7 @@ function Layout() {
             <Link style={navStyle} to="/nothing-here">Some Link</Link>
           </li>
         </ul>
+        
       </nav>
       {/* An <Outlet> renders whatever child route is currently active,
           so you can think about this <Outlet> as a placeholder for

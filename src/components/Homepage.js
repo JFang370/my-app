@@ -2,24 +2,19 @@ import './css/Homepage.css'
 
 function Homepage(){
     return(
-        <div className="container">
-            <div className="main">
-              <div className="main-left">
-              <div className="left-placeholder"></div>
-                <div className="left-content">
-                </div>
-                <div className="left-placeholder"></div>
-                <div className="background"></div>
-              </div>
-              <div className="main-right">
-                <div className="right-content"></div>
-                <div className="right-content"></div>
-                <div className="right-content"></div>
-              </div>
+        <div className='home-container'>
+          <div className='main'>
+            <div className='background'>
+            <img src="https://wallpaper.dog/large/10765597.jpg"></img>
             </div>
-            <div className="footer">
-              d
+            <div className='content'>
+              Welcome to Tokyo!
             </div>
+            
+          </div>
+          <div className='right-sidebar'>
+            <div className=''></div>
+          </div>
         </div>
       );
 }
