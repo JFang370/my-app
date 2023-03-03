@@ -1,70 +1,52 @@
-.wrapper{
-
+.container{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 100px);  
+  max-width: 100%;
+  max-height: 100%;
+  
+  border: 4px solid red;
 }
+.main{
+  display: grid;
+  grid-template: subgrid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  grid-row: 1 / 8;
+  grid-column: 1 / 11;
 
-  .section_about{
-  }
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-  .column-placeholder{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    visibility: visible;
-    background-color: red ;
-  }
-  .row_placeholder{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    visibility: visible;  
-  }
-  .title-column{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 2;
-  }
-  .text-column{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    background-color: aqua;
-    flex: 2;
-  }
-  .image-column{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    background-color: green;
-    flex: 1;
-  }
-  
-  .wrapper_main{
-  
-  }
-  
-  #center{
-    
-  }
-  
-  #h{
-    background-image: url('img/japan-illustration.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-  }
+  border: 4px solid orange;
+}
+.main-left{
+  display: grid;
+  grid-template: subgrid;
+  grid-template-columns: 25% 50% 25%;
+  grid-row: 1 / 11;
+  grid-column: 1 / 6;
+
+  border: 4px solid green;
+}
+.left-placeholder{
+  grid-row: 1 / 11;
+  border: 4px solid greenyellow;
+}
+.left-content{
+  grid-row: 1 / 11;
+  grid-column: 50%;
+  border: 4px solid rgb(59, 89, 14);
+} 
+.main-right{
+  display: grid;
+  grid-template: subgrid;
+  grid-row: 1 / 11;
+  grid-column: 6 / 11;
+
+  border: 4px solid blue;
+}
+.right-content{
+  border: 4px solid royalblue;
+}
+.footer{
+  grid-row: 8 / 10;
+  grid-column: 1 / 2;
+}
