@@ -1,7 +1,7 @@
 import './App.css';
 
 import Homepage from './components/Homepage';
-
+import Food from './components/Food';
 
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
-
+          <Route path="food" element={<Food />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
@@ -40,7 +40,7 @@ function Layout() {
             <Link style={navStyle} to="/">Home</Link>
           </li>
           <li className='navbar_item'>
-            <Link style={navStyle} to="/lodging">Some Link</Link>
+            <Link style={navStyle} to="/food">Food</Link>
           </li>
           <li className='navbar_item'>
             <Link style={navStyle} to="/restaurants">Some Link</Link>
