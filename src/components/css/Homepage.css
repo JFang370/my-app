@@ -1,0 +1,106 @@
+.home-container{
+  display: grid;
+  grid-template: subgrid;
+  grid-template-columns: repeat(10, 10%);
+
+  grid-row: 2 / 9;
+  grid-column: 1 / 11;
+}
+.main{
+  display: grid;
+  grid-template: subgrid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(9, 100px);
+  grid-row: 1 / 9;
+  grid-column: 1 / 11;
+}
+.main > img{
+  grid-row: 1 / 10;
+  grid-column: 1 / 21;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+
+}
+.item-1{
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  grid-row: 2 / 9;
+  grid-column: 2 / 11;
+  z-index: 0;
+  background-color: rgba(255, 229, 234, 0.85);
+  border: 4px solid rgb(141, 198, 248);
+  row-gap: 10px;
+}
+#header{
+  grid-row: 3;
+  grid-column: 3 / 9;
+}
+#header > h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+}
+#text{
+  display: flex;
+  grid-row: 4 / 6;
+  grid-column: 3 / 7;
+  align-items: center;
+  font-size: 25px;
+}
+.item-1 >button{
+  display: flex;
+  max-width: 200px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3 / 6;
+  grid-row: 6;
+  font-size: 25px;
+  background-color: rgb(255, 171, 171) ;
+  border-radius: 50px;
+  border-color: rgb(255, 171, 171);
+}
+
+.item-2{
+  display: grid;
+  grid-template:subgrid;
+  grid-template-rows: repeat(3, 33%);
+  row-gap: 4px;
+  grid-row: 2 / 9;
+  grid-column: 13 / 20;
+  z-index: 0;
+}
+.content{
+  display: grid;
+  grid-template: subgrid;
+  grid-template-columns: 33% 66%;
+  background-color: orange;
+  border-top-right-radius: 115px;
+  border-bottom-right-radius: 115px;
+  border-top-left-radius: 115px;
+  border-bottom-left-radius: 115px;
+  border: 4px solid green;
+}
+.content > p  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2;
+}
+.content > img{
+  object-fit: cover;
+  grid-column: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+#info1{
+
+}
+#info2{
+  grid-row: 2;
+}
+#info3{
+  grid-row: 3;
+}
