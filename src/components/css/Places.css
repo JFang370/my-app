@@ -1,0 +1,49 @@
+#places-container{
+    display: grid;
+    grid-template: subgrid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 100px);
+    grid-column: 1 / 11;
+    grid-row: 2 / 12;
+    background-image: url('https://images.unsplash.com/photo-1526344966-89049886b28d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hlcnJ5JTIwYmxvc3NvbXxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+.places-content{
+    display: grid;
+    grid-template: subgrid;
+    grid-template-rows: 300px 100px;
+}
+.places-content > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.places-content > img{
+    object-fit: cover;
+    grid-column: 1;
+    height: 100%;
+    width: 100%;
+  
+}
+#place-1{
+    background-color: rgb(214, 234, 250);
+    grid-row: 1 / 5;
+    grid-column: 2 / 5;
+}
+#place-2{
+    background-color: rgb(214, 234, 250);
+    grid-row: 6 / 10;
+    grid-column: 2 / 5;
+}
+#place-3{
+    background-color: rgb(214, 234, 250);
+    grid-row: 6 / 10;
+    grid-column: 7 / 10;
+}
+#place-4{
+    background-color: rgb(214, 234, 250);
+    grid-row: 1 / 5;
+    grid-column: 7 / 10;
+}
