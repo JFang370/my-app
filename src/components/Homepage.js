@@ -22,17 +22,19 @@ function Homepage(){
             <div id='info1' className='content'>
               {/* Attractions */}
               <img src='https://ak-d.tripcdn.com/images/1i66u221584od6mea495F.jpg?proc=source/trip'></img>
-              <p></p>
+              <p> There are countless activities and places to visit in Japan. From the big cities to rural areas.
+                  There is so much to discover and explore. There is so much to see and do, you could spend a week just exploring
+                  its cities. Tokyo, Kyoto and Osaka are some of the main spots to visit while in Japan.
+              </p>
             </div>
             <div id='info2' className='content'>
               {/* Scenery */}
               <img src='https://assets3.thrillist.com/v1/image/3115440/828x610/flatten;crop;webp=auto;jpeg_quality=60.jpg'></img>
-              <div className='text'>
-                <h1></h1>
-                <p> From the lavender fields of Furano in Hokkaido down to the crystal clear beaches of Okinawa, 
-                    this small country is filled with gorgeous nature,  
+                <p> Japan is a country with enriching nature, quite known for its mountains, lakes, valleys, and beaches. 
+                    From the lavender fields of Furano in Hokkaido down to the crystal clear beaches of Okinawa, 
+                    this small country is filled with gorgeous nature.  It is a home for any nature lover or any person 
+                    who would like to spend their summers in a cozy country.
                 </p>
-              </div>
             </div>
             <div id='info3' className='content'>
               {/* Food */}
