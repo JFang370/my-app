@@ -1,0 +1,51 @@
+.container{}
+
+#food-container{
+    display: grid;
+    grid-template: subgrid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(8, 200px);
+    grid-column: 1 / 11;
+    grid-row: 2 / 12;
+    background-color: rgb(235, 148, 148);
+    z-index: 1;
+    row-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.food-content{
+    display: flex;
+    grid-template-columns: 50% 50%;
+    grid-column: 2 / 10;
+    border-radius: 20%  ;
+    
+}
+.food-content img{
+    object-fit: cover;
+    justify-content: center;
+    grid-column: 1;
+    max-height: 100%;
+    width: 100%;
+}
+
+.food-content > p{
+    display: flex;
+    font-size: 29px;
+    align-items: center;
+}
+#sushi{
+    grid-row: 1 / 3;
+    background-color: aliceblue;
+}
+#ramen{
+    grid-row: 3 / 5;
+    background-color: rgb(167, 255, 255);
+}
+#okonomiyaki{
+    grid-row: 5 / 7;
+    background-color: aquamarine;
+}
+#mochi{
+    grid-row: 7 / 9;
+    background-color: beige;
+}
