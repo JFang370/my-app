@@ -30,15 +30,23 @@
     height: 100%;
     width: 100%;
 }
-.info > button{
-    border-radius: 40px;
-    height: 40px;
-}
 .info > h1{
     font-size: 40px;
 }
 .transportation-content > p{
     grid-column: 2;
+}
+.info > button{
+    display: flex;
+    max-width: 200px;
+    width: 1000px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgb(255, 171, 171) ;
+    border-radius: 50px;
+    border-color: rgb(255, 171, 171);   
 }
 #option-1{
     grid-row: 1 / 4;

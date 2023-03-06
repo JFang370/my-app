@@ -1,5 +1,6 @@
 import './css/Transportation.css';
-
+import { Link } from 'react-router-dom';
+const navStyle = {textDecoration: "none", color: "white"};
 function Transportation(){
     return(
         <div id='transportation' className='container'>
@@ -13,7 +14,9 @@ function Transportation(){
                     It is highly recommended to take the "Shinkansen" trains when travelling between cities. A japan Rail pass is needed and are valid for 7, 14, or 21 days. The trains are the most convenient and economical option, especially when taking multiple trains across Japan. 
                     You also have the option to reserve a seat. 
                     </p>
-                    <button>Learn More!</button>
+                        <button>
+                        <Link style={navStyle} to='https://www.japan-guide.com/e/e2019.html'>Learn More!</Link>    
+                        </button>    
                 </div>
             </div>
             <div id='option-2' className='transportation-content'>
@@ -27,7 +30,9 @@ function Transportation(){
                     Fare calculation is almost always by the meter, though fares are generally fairly high.
                     It is best to avoid the morning and evening rush hours.
                     </p>
-                    <button>Learn More!</button>
+                        <button>
+                        <Link style={navStyle} to='https://www.japan.travel/en/plan/getting-around/taxis/'>Learn More!</Link>
+                        </button>
                 </div>
                 <img src='https://image.cnbcfm.com/api/v1/image/105104384-GettyImages-546314072.jpg?v=1532563661&w=1920&h=1080'></img>
             </div>
@@ -40,7 +45,9 @@ function Transportation(){
                     Fixed-route buses make regular stops and are generally used by people to go to work, school, shopping, etc. Bus fare is generally flat, but depend on the number indicated on tickets. 
                     Tour buses travel to prominent tourist destinations. Tour guides are also available on board and can provide guidance in multiple languages. 
                     </p>
-                    <button>Learn More!</button>
+                    <button>
+                        <Link style={navStyle} to='https://www.japan-guide.com/e/e2015.html' className=''>Learn More!        </Link>
+                    </button>
                 </div>
                 
             </div>

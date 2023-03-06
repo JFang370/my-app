@@ -15,7 +15,7 @@ function Homepage(){
               Discover new and unique experiences that can only be found in Japan!
             </div>
             <button>
-              <Link style={navStyle} to="/">Learn More!</Link> 
+              <Link style={navStyle} to="https://www.japan.travel/en/us/">Learn More!</Link> 
             </button>
           </div>
           <div className='item-2'>
