@@ -3,6 +3,7 @@ import './App.css';
 import Homepage from './components/Homepage';
 import Food from './components/Food';
 import Places from './components/Places';
+import Transportation from './components/Transportation';
 
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
@@ -15,6 +16,7 @@ export default function App() {
           <Route index element={<Homepage />} />
           <Route path="food" element={<Food />} />
           <Route path="places" element={<Places />} />
+          <Route path="transportation" element={<Transportation />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
@@ -42,16 +44,13 @@ function Layout() {
             <Link style={navStyle} to="/">Home</Link>
           </li>
           <li className='navbar_item'>
-            <Link style={navStyle} to="/food">Food</Link>
+            <Link style={navStyle} to="/food">Food to Try</Link>
           </li>
           <li className='navbar_item'>
             <Link style={navStyle} to="/places">Places To Visit</Link>
           </li>
           <li className='navbar_item'>
-            <Link style={navStyle} to="/attractions">Some Link</Link>
-          </li>
-          <li className='navbar_item'>
-            <Link style={navStyle} to="/nothing-here">Some Link</Link>
+            <Link style={navStyle} to="/transportation">Transportation</Link>
           </li>
         </ul>
         
