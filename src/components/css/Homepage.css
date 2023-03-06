@@ -48,7 +48,7 @@
   align-items: center;
   font-size: 25px;
 }
-.item-1 >button{
+.item-1 > button{
   display: flex;
   max-width: 200px;
   height: 55px;
